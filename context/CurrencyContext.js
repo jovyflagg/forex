@@ -199,6 +199,7 @@ export const CurrencyContext = createContext(initialValues);
 
 export const CurrencyContextProvider = ({ children }) => {
     const [currencies, setCurrencies] = useState(initialValues);
+    const [currencyList, setCurrencyList] = useState([])
 
     //   useEffect(() => {
     //     const fetchData = async () => {
@@ -217,7 +218,7 @@ export const CurrencyContextProvider = ({ children }) => {
     // []);
 
 
-    const contextValue = { currencies, setCurrencies };
+    const contextValue = { currencies, setCurrencies, currencyList, setCurrencyList};
 
     return (
         <CurrencyContext.Provider value={contextValue}>
