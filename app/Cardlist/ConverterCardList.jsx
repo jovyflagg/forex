@@ -1,25 +1,22 @@
-import React from 'react'
+import React from "react";
+import './ConverterCardList.css';
 
 const ConverterCardList = ({ currencyList }) => {
+  return (
+    <ul>
+      <p className="saved-section-header">My Saved Conversions</p>
 
-    return (
-        <ul>
-            ConverterCardList
-            {currencyList.map(currency => (
-                <>
-                    <li key={currencyList.id}>
-                        {currency.countyBaseName}{" "}
-                        {currency.countyConversionName}{" "}
-                        {currency.amount}{" "}
-                        {currency.convertedAmount}{" "}
-                        {currency.conversion}{" "}
-                    </li>
-                    <hr />
-                </>
-            ))}
+      {currencyList.map((currency) => (
+        <>
+          <li key={currencyList.id}>
+            {currency.countyBaseName} {currency.countyConversionName}{" "}
+            {currency.amount} {currency.convertedAmount} {currency.conversion}{" "}
+          </li>
+          <hr />
+        </>
+      ))}
+    </ul>
+  );
+};
 
-        </ul>
-    )
-}
-
-export default ConverterCardList
+export default ConverterCardList;

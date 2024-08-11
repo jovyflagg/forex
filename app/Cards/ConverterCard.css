@@ -1,0 +1,37 @@
+.card-converter {
+  display: flex;
+  flex-direction: column;
+  border: 0 solid #ccc; /* Adjust border width and color as needed */
+  border-radius: 10px; /* Adjust radius to control the roundness */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Adjust shadow as needed */
+  padding: 50px;
+  width: 30%;
+  height: 400px;
+}
+
+.btn-group{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 30px;;
+}
+
+.input-select{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  align-items: center;
+  
+}
+
+.label-text{
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.conversion-rate-wrapper{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  
+}

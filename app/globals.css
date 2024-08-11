@@ -17,6 +17,8 @@
 }
 
 body {
+  height: 100%;
+  margin: 0;
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -30,4 +32,102 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+/* Navbar.css */
+
+.navbar {
+  background: linear-gradient(135deg, #174bb4, #1cd9e0); /* Gradient background */
+  padding: 1rem;
+  color: white; /* Text color for readability */
+  display: flex; /* Flexbox for positioning */
+  align-items: center; /* Vertically center items */
+  justify-content: space-between; /* Space between logo and menu */
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  width: 100%;
+  align-items: center; /* Center items vertically */
+}
+
+.navbar-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.navbar-subheading {
+  font-size: 0.875rem; /* Smaller font size for subheading */
+  color: white; /* Text color for readability */
+  margin: 0 auto; /* Center the subheading */
+}
+
+.navbar-menu {
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar-menu a {
+  color: white; /* Link color */
+  text-decoration: none; /* Remove underline */
+  padding: 0.5rem 1rem; /* Padding around links */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.navbar-menu a:hover {
+  background-color: #1818c9; /* Slightly darker color for hover effect */
+}
+
+@media (max-width: 768px) {
+  .navbar-menu {
+    flex-direction: column; /* Stack menu items vertically */
+    gap: 0.5rem;
+  }
+}
+
+/* end navbar*/
+
+
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #e8ebee;
+
+}
+.welcome-text{
+  align-self: flex-start;
+  font-size: 20px;
+  margin: 30px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+.content{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+
+}
+
+.saved-section{
+  margin: 30px;
+}
+
+.footer {
+  margin-top: auto;
+  text-align: center;
+  padding: 1rem;
+  background-color: #f1f1f1;
+  color: rgb(53, 53, 53);
+  font-family:'Times New Roman', Times, serif;
+
 }

@@ -1,0 +1,15 @@
+.saved-section-header{
+    font-size: 22px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.saved-section-list{
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+ul li {
+    margin: 5px 0; /* Adds space between list items */
+    padding: 5px; /* Adds space inside each list item */
+    list-style-type: none; /* Adds bullet points to the list items */
+}
