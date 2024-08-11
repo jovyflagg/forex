@@ -4,7 +4,7 @@ import { useContext, useEffect, useState } from "react";
 import Card from "./Cards/ConverterCard";
 import ConverterCardList from "./Cardlist/ConverterCardList";
 import Footer from "./Footer/Footer";
-import "./globals.css";
+// import "./globals.css";
 import Navbar from "./Navbar/Navbar";
 
 

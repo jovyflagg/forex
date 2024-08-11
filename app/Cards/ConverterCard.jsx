@@ -5,7 +5,7 @@ import CurrencyAPI from "@everapi/currencyapi-js";
 const currencyApi = new CurrencyAPI(process.env.NEXT_PUBLIC_CURRENCYAPI);
 import "./ConverterCard.css";
 import { Button, TextField } from "@mui/material";
-
+import { nanoid } from "nanoid";
 const Card = () => {
   const { currencies, currencyList, setCurrencyList } =
     useContext(CurrencyContext);
@@ -37,7 +37,8 @@ const Card = () => {
     }));
   };
   const handleSave = () => {
-    setCurrencyList((prev) => [...prev, data]);
+    const newData = { ...data, _id: nanoid() };
+    setCurrencyList((prev) => [...prev, newData]);
   };
 
   useEffect(() => {
@@ -109,7 +110,7 @@ const Card = () => {
         <p className="label-text">{data.conversion}</p>
       </div>
 
-    
+
       <div className="btn-group">
         <Button variant="contained" onClick={handleConversion}>
           Calculate

@@ -201,6 +201,10 @@ export const CurrencyContextProvider = ({ children }) => {
     const [currencies, setCurrencies] = useState(initialValues);
     const [currencyList, setCurrencyList] = useState([])
 
+    const deleteCurrency = (id) => {
+        setCurrencyList(prev => prev.filter(currency => currency.id !== id))
+        console.log(currencyList)
+    }
     //   useEffect(() => {
     //     const fetchData = async () => {
     //       try {
@@ -218,7 +222,7 @@ export const CurrencyContextProvider = ({ children }) => {
     // []);
 
 
-    const contextValue = { currencies, setCurrencies, currencyList, setCurrencyList};
+    const contextValue = { currencies, setCurrencies, currencyList, setCurrencyList , deleteCurrency};
 
     return (
         <CurrencyContext.Provider value={contextValue}>
