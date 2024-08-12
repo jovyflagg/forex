@@ -1,15 +1,25 @@
+.saved-list-container{
+    margin: 20px;
+}
+
 .saved-section-header{
     font-size: 22px;
     font-family: 'Times New Roman', Times, serif;
 }
 
 .saved-section-list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     font-size: 18px;
+    gap: 20px;
     font-family: 'Times New Roman', Times, serif;
 }
 
 ul li {
-    margin: 5px 0; /* Adds space between list items */
+    margin: 10px 0; /* Adds space between list items */
     padding: 5px; /* Adds space inside each list item */
     list-style-type: none; /* Adds bullet points to the list items */
 }
+
+

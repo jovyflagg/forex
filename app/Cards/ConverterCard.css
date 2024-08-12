@@ -3,10 +3,11 @@
   flex-direction: column;
   border: 0 solid #ccc; /* Adjust border width and color as needed */
   border-radius: 10px; /* Adjust radius to control the roundness */
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Adjust shadow as needed */
+  box-shadow: 0 10px 20px rgba(196, 195, 195, 0.1); /* Adjust shadow as needed */
   padding: 50px;
   width: 30%;
   height: 400px;
+  background-color: white;
 }
 
 .btn-group{

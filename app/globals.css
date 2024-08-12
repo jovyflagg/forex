@@ -37,9 +37,9 @@ body {
 /* Navbar.css */
 
 .navbar {
-  background: linear-gradient(135deg, #174bb4, #1cd9e0); /* Gradient background */
+  background: linear-gradient(135deg,  rgb(1, 65, 91), #f6f6f6); /* Gradient background */
   padding: 1rem;
-  color: white; /* Text color for readability */
+  color: #f4de51; /* Text color for readability */
   display: flex; /* Flexbox for positioning */
   align-items: center; /* Vertically center items */
   justify-content: space-between; /* Space between logo and menu */
@@ -61,7 +61,7 @@ body {
 
 .navbar-subheading {
   font-size: 0.875rem; /* Smaller font size for subheading */
-  color: white; /* Text color for readability */
+  color: #ffffff; /* Text color for readability */
   margin: 0 auto; /* Center the subheading */
 }
 
@@ -96,7 +96,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: #e8ebee;
+  background-color: #f8f8f8;
 
 }
 .welcome-text{
@@ -104,6 +104,7 @@ body {
   font-size: 20px;
   margin: 30px;
   font-family: 'Times New Roman', Times, serif;
+  color: white;
 }
 
 
@@ -114,7 +115,7 @@ body {
   padding: 20px;
   justify-content: center;
   align-items: center;
-  background-color: white;
+  background-color: rgb(4, 146, 202);
 
 }
 
@@ -126,8 +127,8 @@ body {
   margin-top: auto;
   text-align: center;
   padding: 1rem;
-  background-color: #f1f1f1;
-  color: rgb(53, 53, 53);
+  background-color: #00011f;
+  color: rgb(236, 190, 63);
   font-family:'Times New Roman', Times, serif;
 
 }

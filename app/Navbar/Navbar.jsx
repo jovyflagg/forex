@@ -6,6 +6,9 @@ const Navbar = () => {
       <div className="navbar-container">
         <div className="navbar-logo">
           Forex
+          <div className="navbar-subheading">
+            Currency Converter
+          </div>
         </div>
       </div>
     </nav>
